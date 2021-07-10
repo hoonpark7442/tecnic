@@ -1,20 +1,14 @@
 class Users::RegistrationsController < Devise::RegistrationsController
 	respond_to :json
 
-	private
+  def create
+    build_resource(sign_up_params)
 
-	def respond_with(resource, _opts = {})
-    register_success && return if resource.persisted?
-
-    register_failed
+    resource.save
+    render json: resource
+  rescue => e
+    logger.send(:fatal, "#{e}: #{e.message}\n#{e.backtrace.join("\n")}")
+  	validation_error(e)
   end
 
-  def register_success
-    render json: { message: 'Signed up sucessfully.' }
-  end
-
-  def register_failed
-    render json: { message: "Something went wrong." }
-  end
-  
 end

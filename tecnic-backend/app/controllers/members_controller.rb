@@ -1,8 +1,9 @@
 class MembersController < ApplicationController
-	before_action :authenticate_user!
+	before_action :jwt_authenticate_request!
 
-	def show
-    render json: { message: "If you see this, you're in!" }
+	def test
+    @dataJson = { :message => "[Test] Token 인증 되었습니다! :D", :user => current_user }
+    render :json => @dataJson, :except => [:id, :created_at, :updated_at]
   end
   
 end

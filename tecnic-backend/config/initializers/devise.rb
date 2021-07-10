@@ -18,9 +18,16 @@ Devise.setup do |config|
 
   # jwt setup
 
-  config.jwt do |jwt|
-    jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
-  end
+  # config.jwt do |jwt|
+  #   jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
+  #   jwt.dispatch_requests = [
+  #     ['POST', %r{^/sign_in$}]
+  #   ]
+  #   jwt.revocation_requests = [
+  #     ['DELETE', %r{^/sign_out$}]
+  #   ]
+  #   jwt.expiration_time = 1.day.to_i
+  # end
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -284,8 +291,8 @@ Devise.setup do |config|
   # change the failure app, you can configure them inside the config.warden block.
   #
   # config.warden do |manager|
-  #   manager.intercept_401 = false
-  #   manager.default_strategies(scope: :user).unshift :some_external_strategy
+    # manager.intercept_401 = false
+    # manager.default_strategies(scope: :user).unshift :some_external_strategy
   # end
 
   # ==> Mountable engine configurations

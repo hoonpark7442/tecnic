@@ -1,0 +1,111 @@
+Running via Spring preloader in process 46228
+--------------http error start--------------
+author is deleted because of 404 not found error! rss: http://www.ecogwiki.com/sp.posts?_type=atom
+--------------http error end--------------
+==============error==============
+something went wrong! at https://blog.leop0ld.org/feed.xml 
+#<SocketError: Failed to open TCP connection to blog.leop0ld.org:443 (getaddrinfo: nodename nor servname provided, or not known)>
+==============error==============
+==============error==============
+something went wrong! at https://kangmyounghun.blogspot.com/feeds/posts/default 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa090e53a98>
+Did you mean?  updated>
+==============error==============
+--------------http error start--------------
+author is deleted because of 404 not found error! rss: https://medium.com/feed/@brillante9111
+--------------http error end--------------
+==============error==============
+something went wrong! at https://b.luavis.kr/feed.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa09448b070>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://kangwoojin.github.io/feed.xml 
+#<RSS::MissingTagError: tag <title> is missing in tag <image>>
+==============error==============
+==============error==============
+something went wrong! at https://daddynkidsmakers.blogspot.com/feeds/posts/default 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa0944a9368>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://taylor-kang.github.io/feed.xml 
+#<NoMethodError: undefined method `pubDate' for nil:NilClass>
+==============error==============
+==============error==============
+something went wrong! at https://feeds.feedburner.com/firejune 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa090ecd370>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://armadillo-dev.github.io/feed.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa090dfc720>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://blog.rss.naver.com/nackji80.xml 
+#<OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=error: certificate verify failed (unspecified certificate verification error)>
+==============error==============
+--------------http error start--------------
+author is deleted because of 404 not found error! rss: https://v2.velog.io/rss/rjs1197
+--------------http error end--------------
+==============error==============
+something went wrong! at https://chaewonkong.github.io/atom.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa0980fe700>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at http://danielku.com/atom.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa0947f5fd0>
+Did you mean?  updated>
+==============error==============
+--------------http error start--------------
+author is deleted because of 404 not found error! rss: https://inbon.net/rss/
+--------------http error end--------------
+==============error==============
+something went wrong! at https://mayajuni.github.io/feed.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa093b0a9b0>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://gwonsungjun.github.io/atom.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa0980ef7a0>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://blog.rss.naver.com/knix008.xml 
+#<OpenSSL::SSL::SSLError: SSL_connect returned=1 errno=0 state=error: certificate verify failed (unspecified certificate verification error)>
+==============error==============
+==============error==============
+something went wrong! at https://nesoy.github.io/atom.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa09981f718>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://dataninja.me/feed.xml 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa090e762a0>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://taetaetae.github.io/index.xml 
+#<RSS::MissingTagError: tag <title> is missing in tag <image>>
+==============error==============
+==============error==============
+something went wrong! at https://taeguk2.blogspot.com/feeds/posts/default 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa0980890e0>
+Did you mean?  updated>
+==============error==============
+==============error==============
+something went wrong! at https://medium.com/feed/@khwsc1 
+#<NoMethodError: undefined method `pubDate' for nil:NilClass>
+==============error==============
+==============error==============
+something went wrong! at https://cimfalab.github.io/deepscan/atom.xml 
+#<RSS::MissingTagError: tag <author> is missing in tag <entry>>
+==============error==============
+==============error==============
+something went wrong! at https://kwang82.blogspot.com/feeds/posts/default 
+#<NoMethodError: undefined method `pubDate' for #<RSS::Atom::Feed::Entry:0x00007fa090ea5cf8>
+Did you mean?  updated>
+==============error==============
+^CTraceback (most recent call last):
