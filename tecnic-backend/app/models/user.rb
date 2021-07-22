@@ -16,4 +16,7 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, 
          :registerable
+
+  has_many :subscriptions
+  has_many :authors, through: :subscriptions
 end

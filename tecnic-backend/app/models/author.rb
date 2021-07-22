@@ -19,4 +19,7 @@ class Author < ApplicationRecord
 	enum author_type: { individual: 1, community: 2 }
 
 	has_many :posts
+
+	has_many :subscriptions
+	has_many :subscribers, through: :subscriptions, source: :user
 end
