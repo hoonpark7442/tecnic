@@ -14,6 +14,22 @@ class SubscriptionsController < ApplicationController
   end
 
   def destroy
+    
+    # @author = Author.find(params[:id])
+    begin
+      @subscription = current_user.subscriptions.find_by!(author_id: params[:id])
+      @subscription.destroy!
+      head :no_content
+    rescue ActiveRecord::RecordNotFound => e
+      render json: {
+          message: e.message,
+          status: 404
+        }, status: :not_found
+    rescue => e
+      render json: {
+          message: e.message
+        }, status: :unprocessable_entity
+    end
   end
 
   private
