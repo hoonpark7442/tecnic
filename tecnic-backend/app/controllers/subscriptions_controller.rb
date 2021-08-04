@@ -14,8 +14,6 @@ class SubscriptionsController < ApplicationController
   end
 
   def destroy
-    
-    # @author = Author.find(params[:id])
     begin
       @subscription = current_user.subscriptions.find_by!(author_id: params[:id])
       @subscription.destroy!

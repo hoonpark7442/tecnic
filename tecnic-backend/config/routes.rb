@@ -3,15 +3,19 @@ Rails.application.routes.draw do
              controllers: {
                 registrations: 'users/registrations'
              }
-  post 'auth_user' => 'authentication#authenticate_user'       
+  post 'auth_user' => 'authentication#authenticate_user'
   get '/member-data', to: 'members#test'
 
   resources :authors, only: [:index, :show] do
-    resources :posts  
+    resources :posts
   end
   
-  resources :posts
+  resources :posts do
+    resources :read_marks, only: [:create, :destroy]  
+  end
+  
   resources :tags
   resources :subscriptions, only: [:create, :destroy]
+  
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

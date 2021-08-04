@@ -35,5 +35,6 @@ module TecnicBackend
 
     # to auto load lib/ directory
     config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W(#{config.root}/lib/modules)
   end
 end

@@ -11,7 +11,13 @@
 #  updated_at :datetime         not null
 #
 class Post < ApplicationRecord
+  include ReadMarkChecker::Readable::InstanceMethods
+  extend ReadMarkChecker::Readable::ClassMethods
+  extend ReadMarkChecker::ReadableScopes
+
   belongs_to :author
   has_and_belongs_to_many :tags
   
+  has_many :read_marks
+  has_many :users, through: :read_marks
 end

@@ -19,4 +19,7 @@ class User < ApplicationRecord
 
   has_many :subscriptions
   has_many :authors, through: :subscriptions
+
+  has_many :read_marks
+  has_many :posts, through: :read_marks
 end
