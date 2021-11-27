@@ -12,6 +12,8 @@ Rails.application.routes.draw do
   
   resources :posts do
     resources :read_marks, only: [:create, :destroy]  
+    resource :favorite, only: [:create, :destroy]
+    resource :drawer, only: [:create, :destroy]
   end
   
   resources :tags

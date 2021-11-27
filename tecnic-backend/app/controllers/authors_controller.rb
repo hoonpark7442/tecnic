@@ -10,7 +10,7 @@ class AuthorsController < ApplicationController
     render json: @authors, status: :ok
   end
 
-  def shows
+  def show
     render json: @author, status: :ok
   end
 

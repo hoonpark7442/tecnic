@@ -1,6 +1,6 @@
 # == Schema Information
 #
-# Table name: read_marks
+# Table name: favorites
 #
 #  id         :bigint           not null, primary key
 #  user_id    :bigint           not null
@@ -10,6 +10,6 @@
 #
 require 'rails_helper'
 
-RSpec.describe ReadMark, type: :model do
+RSpec.describe Favorite, type: :model do
   pending "add some examples to (or delete) #{__FILE__}"
 end
