@@ -2,7 +2,6 @@ class AuthenticationController < ApplicationController
 
   ## JWT 토큰 생성을 위한 Devise 유저 정보 검증
   def authenticate_user
-    puts "sdlkfjsladfjlsdkjfalskdjfldskjflsdkja"
     ## body로 부터 받은 json 형식의 params를 parsing
     json_params = JSON.parse(request.body.read)
 	  
